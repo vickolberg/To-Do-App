@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(230, 230, 222);
+}
+#main-container {
+    background-color: rgb(224, 209, 233);
+    display: inline-block;
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+    padding: 30px;
+    position: fixed;
+    inset: 0px;
+    margin: auto;
+    box-shadow: 5px 5px 10px purple;
+    border: 4px solid purple;
+}
+#title-div {
+    text-align: center;
+    font-family: cursive;
+    text-shadow: 1px 1px 3px purple;
+    font-size: 24px;
+}
+#input-form {
+    margin-top: 20px;
+    text-align: center;
+}
+#input {
+    width: 332px;
+    height: 40px;
+    border-radius: 9px;
+    background-color: rgb(241, 241, 228);
+    font-size: 14px;
+
+}
+#add-btn {
+    background-color: rgb(241, 241, 228);
+    width: 90px;
+    height: 40px;
+    font-size: 14px;
+    border-radius: 9px;
+}
+#list-div {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 20px;
+}
+ul {
+    list-style-type: none;
+    line-height: 41px;
+}
+li {
+    border: .1em solid black;
+    border-radius: 10px;
+    margin: 5px;
+    background-image: url(images/unchecked.png);
+    background-size: 45px;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+li:hover {
+    background-color: rgb(214, 161, 214);
+}
+.checked-item {
+    text-decoration: line-through;
+    color: rgb(93, 77, 77);
+    background-image: url(images/checked.png);
+    background-size: 45px;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-color: rgb(174, 169, 169);
+}
+.checked-item:hover {
+    background-color: rgb(174, 169, 169);
+}
+.delbtn {
+    background-color: rgb(224, 209, 233);
+    width: 42px;
+    height: 42px;
+    position: absolute;
+    right: 35px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 1px solid;
+}
+.delbtn:hover {
+    background-color: rgb(110, 95, 124);
+}
