@@ -2,9 +2,21 @@ let inputForm = document.getElementById("input");
 let listDiv = document.getElementById("list-div");
 let unorderedList = document.getElementById("ul");
 const addButton = document.getElementById("add-btn");
-
+const mainContainer = document.getElementById("main-container");
 
 //styles
+
+mainContainer.style.backgroundColor = "rgb(224, 209, 233)";
+mainContainer.style.display = "inline-block";
+mainContainer.style.width = "500px";
+mainContainer.style.height = "500px";
+mainContainer.style.borderRadius = "10px"
+mainContainer.style.padding = "30px";
+mainContainer.style.position = "fixed";
+mainContainer.style.inset = "0px";
+mainContainer.style.margin = "auto";
+mainContainer.style.boxShadow = "5px 5px 10px purple";
+mainContainer.style.border = "4px solid purple";
 
 inputForm.style.width = "332px";
 inputForm.style.height = "40px";
