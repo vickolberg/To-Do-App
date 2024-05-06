@@ -5,32 +5,36 @@ const addButton = document.getElementById("add-btn");
 const mainContainer = document.getElementById("main-container");
 
 //styles
+Object.assign(mainContainer.style, {
+    backgroundColor: "rgb(224, 209, 233)",
+    display: "inline-block",
+    width: "500px",
+    height: "500px",
+    borderRadius: "10px",
+    padding: "30px",
+    position: "fixed",
+    inset: "0px",
+    margin: "auto",
+    boxShadow: "5px 5px 10px purple",
+    border: "4px solid purple"
+  });
 
-mainContainer.style.backgroundColor = "rgb(224, 209, 233)";
-mainContainer.style.display = "inline-block";
-mainContainer.style.width = "500px";
-mainContainer.style.height = "500px";
-mainContainer.style.borderRadius = "10px"
-mainContainer.style.padding = "30px";
-mainContainer.style.position = "fixed";
-mainContainer.style.inset = "0px";
-mainContainer.style.margin = "auto";
-mainContainer.style.boxShadow = "5px 5px 10px purple";
-mainContainer.style.border = "4px solid purple";
-
-inputForm.style.width = "332px";
-inputForm.style.height = "40px";
-inputForm.style.borderRadius = "9px";
-inputForm.style.backgroundColor = "rgb(241, 241, 228)";
-inputForm.style.fontSize = "14px";
-
-unorderedList.style.listStyleType = "none";
-unorderedList.style.lineHeight = "41px";
-
-listDiv.style.textAlign = "center";
-listDiv.style.marginTop = "30px";
-listDiv.style.fontSize = "20px";
-
+  Object.assign(inputForm.style, {
+    width: "332px",
+    height: "40px",
+    borderRadius: "9px",
+    backgroundColor: "rgb(241, 241, 228)",
+    fontSize: "14px"
+  });
+Object.assign(unorderedList.style,{
+    listStyleType: "none",
+    lineHeight: "41px"
+} );
+Object.assign(listDiv.style, {
+    textAlign: "center",
+    marginTop: "30px",
+    fontSize: "20px"
+})
 
 addButton.addEventListener("click", e=> {
     e.preventDefault();
